@@ -1,1 +1,6 @@
-<button onclick="fetch('https://raw.githubusercontent.com/okdill/beanielite/refs/heads/main/release.js').then(r=>r.text()).then(t=>navigator.clipboard.writeText(t))">copy beanielite bookmarklet</button>
+<div style="display:flex;justify-content:center;align-items:center;height:100vh">
+<button id=x style="font-size:24px;padding:20px 40px;cursor:pointer">copy beanielite bookmarklet</button>
+</div>
+<script>
+(()=>{const a=atob("aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL29rZGlsbC9iZWFuaWVsaXRlL3JlZnMvaGVhZHMvbWFpbi9yZWxlYXNlLmpz");x.onclick=async()=>navigator.clipboard.writeText(await(await fetch(a)).text())})();
+</script>
